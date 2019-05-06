@@ -12,7 +12,7 @@ use PHPUnit_Framework_TestCase as PHPUnit;
  *
  * @package CDC\Loja\Prodduto
  */
-class MairoEMenorTest extends PHPUnit
+class MaiorEMenorTest extends PHPUnit
 {
     /**
      * Ordem decrescente

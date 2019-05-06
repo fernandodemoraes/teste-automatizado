@@ -13,18 +13,25 @@ class Produto
     /**
      * @var float
      */
-    private $valor;
+    private $valorUnitario;
+
+    /**
+     * @var integer
+     */
+    private $quantidade;
 
     /**
      * Produto constructor.
      *
      * @param $produto
      * @param $valor
+     * @param int $quantidade
      */
-    public function __construct($produto, $valor)
+    public function __construct($produto, $valorUnitario, $quantidade = 1)
     {
-        $this->nome    = $produto;
-        $this->valor   = $valor;
+        $this->nome          = $produto;
+        $this->valorUnitario = $valorUnitario;
+        $this->quantidade    = $quantidade;
     }
 
     /**
@@ -46,16 +53,42 @@ class Produto
     /**
      * @return float
      */
-    public function getValor()
+    public function getValorUnitario()
     {
-        return $this->valor;
+        return $this->valorUnitario;
     }
 
     /**
-     * @param float $valor
+     * @param float $valorUnitario
      */
-    public function setValor($valor)
+    public function setValorUnitario($valorUnitario)
     {
-        $this->valor = $valor;
+        $this->valorUnitario = $valorUnitario;
+    }
+
+    /**
+     * @return int
+     */
+    public function getQuantidade()
+    {
+        return $this->quantidade;
+    }
+
+    /**
+     * @param int $quantidade
+     */
+    public function setQuantidade($quantidade)
+    {
+        $this->quantidade = $quantidade;
+    }
+
+    /**
+     * Valor total
+     *
+     * @return float|int
+     */
+    public function getValorTotal()
+    {
+        return $this->valorUnitario * $this->quantidade;
     }
 }

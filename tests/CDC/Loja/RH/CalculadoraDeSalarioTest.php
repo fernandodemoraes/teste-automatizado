@@ -6,6 +6,9 @@ use PHPUnit_Framework_TestCase as PHPUnit;
 
 class CalculadoraDeSalarioTest extends PHPUnit
 {
+    /**
+     * Calcular salário do desenvolvedor abaixo do limite
+     */
     public function testCalculoSalarioDesenvolvedoresComSalarioAbaixoDoLimite()
     {
         $calculadora = new CalculadoraDeSalario();
@@ -15,6 +18,9 @@ class CalculadoraDeSalarioTest extends PHPUnit
         $this->assertEquals(1500.0 * 0.9, $salario, null, 0.00001);
     }
 
+    /**
+     * Calcular salário do desenvolvedor acima do limite
+     */
     public function testCalculoSalarioDesenvolvedoresComSalarioAcimaDoLimite()
     {
         $calculadora = new CalculadoraDeSalario();

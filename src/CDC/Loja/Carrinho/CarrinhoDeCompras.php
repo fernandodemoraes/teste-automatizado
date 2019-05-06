@@ -3,6 +3,7 @@
 namespace CDC\Loja\Carrinho;
 
 use CDC\Loja\Produto\Produto;
+use ArrayObject;
 
 /**
  * Class CarrinhoDeCompras
@@ -11,6 +12,7 @@ use CDC\Loja\Produto\Produto;
  */
 class CarrinhoDeCompras
 {
+
     /**
      * @var \ArrayObject
      */
@@ -18,7 +20,7 @@ class CarrinhoDeCompras
 
     public function __construct()
     {
-        $this->produtos = new \ArrayObject();
+        $this->produtos = new ArrayObject();
     }
 
     /**
@@ -30,7 +32,7 @@ class CarrinhoDeCompras
     }
 
     /**
-     * @return \ArrayObject
+     * @return ArrayObject
      */
     public function getProdutos()
     {
@@ -38,19 +40,22 @@ class CarrinhoDeCompras
     }
 
     /**
+     * Encontra o maior preço do carrinho
+     *
+     * @param \CDC\Loja\Carrinho\CarrinhoDeCompras $carrinhoDeCompras
      * @return int
      */
-    public function maiorValor()
+    public function maiorValor(CarrinhoDeCompras $carrinhoDeCompras)
     {
-        if (count($this->getItens()) === 0) {
+        if (count($carrinhoDeCompras->getProdutos()) === 0) {
             return 0;
         }
 
-        $maiorValor = $this->getProdutos()[0]->getValor();
+        $maiorValor = $carrinhoDeCompras->getProdutos()[0]->getValorTotal();
 
-        foreach ($this->getProdutos() as $produto) {
-            if ($maiorValor < $produto->getValor()) {
-                $maiorValor = $produto->getValor();
+        foreach ($carrinhoDeCompras->getProdutos() as $produto) {
+            if ($maiorValor < $produto->getValorTotal()) {
+                $maiorValor = $produto->getValorTotal();
             }
         }
 
