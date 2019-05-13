@@ -4,11 +4,17 @@ namespace CDC\Loja\RH;
 
 class CalculadoraDeSalario
 {
+
+    /**
+     * Calcula o salário do funcionário
+     *
+     * @param \CDC\Loja\RH\Funcionario $funcionario
+     * @return float
+     */
     public function calcularSalario(Funcionario $funcionario)
     {
-        if ($funcionario->getSalario() > 3000) {
-            return $funcionario->getSalario() * 0.8;
-        }
-        return $funcionario->getSalario() * 0.9;
+        $cargo = new Cargo($funcionario->getCargo());
+
+        return  $cargo->getRegra()->calcula($funcionario);
     }
 }
