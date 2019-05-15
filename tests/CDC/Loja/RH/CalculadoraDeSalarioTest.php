@@ -13,7 +13,7 @@ class CalculadoraDeSalarioTest extends PHPUnit
     {
         $calculadora = new CalculadoraDeSalario();
         $desenvolvedor = new Funcionario("Fernando", 1500.0, TabelaCargos::DESENVOLVEDOR);
-        $salario = $calculadora->calcularSalario($desenvolvedor->getSalario());
+        $salario = $calculadora->calcularSalario($desenvolvedor);
 
         $this->assertEquals(1500.0 * 0.9, $salario, null, 0.00001);
     }
