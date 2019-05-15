@@ -16,11 +16,7 @@ jobs:
     docker:
       - image: circleci/php:7.3.0-apache
     steps:
-      - run:
-          command: |
-            mkdir -p ~/phpunit
-            phpunit tests --color
-          when: always
+      - run: ./vendor/bin/phpunit tests --color
       - store_test_results:
           path: ~/phpunit
       - store_artifacts:
