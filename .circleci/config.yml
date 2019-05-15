@@ -19,7 +19,7 @@ jobs:
       - run:
           command: |
             mkdir -p ~/phpunit
-            phpunit --log-junit ~/phpunit/junit.xml tests
+            phpunit tests --color
           when: always
       - store_test_results:
           path: ~/phpunit
