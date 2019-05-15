@@ -12,10 +12,6 @@ jobs:
             - v1-dependencies-{{ checksum "composer.json" }}
             - v1-dependencies-
       - run: composer install
-  test:
-    docker:
-      - image: circleci/php:7.3.0-apache
-    steps:
       - run: ./vendor/bin/phpunit tests --color
       - store_test_results:
           path: ~/phpunit
