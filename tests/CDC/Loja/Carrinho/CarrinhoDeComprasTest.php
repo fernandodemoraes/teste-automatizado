@@ -2,7 +2,6 @@
 
 namespace CDC\Loja\Carrinho;
 
-use CDC\Loja\Produto\Produto;
 use CDC\Loja\Test\Builder\CarrinhoDeComprasBuilder;
 use CDC\Loja\Test\TestCase;
 
