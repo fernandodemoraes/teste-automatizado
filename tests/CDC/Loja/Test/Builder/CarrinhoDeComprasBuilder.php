@@ -5,6 +5,11 @@ namespace CDC\Loja\Test\Builder;
 use CDC\Loja\Carrinho\CarrinhoDeCompras;
 use CDC\Loja\Produto\Produto;
 
+/**
+ * Class CarrinhoDeComprasBuilder
+ *
+ * @package CDC\Loja\Test\Builder
+ */
 class CarrinhoDeComprasBuilder
 {
 

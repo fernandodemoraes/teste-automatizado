@@ -2,7 +2,11 @@
 
 namespace CDC\Loja\Produto;
 
-
+/**
+ * Class Produto
+ *
+ * @package CDC\Loja\Produto
+ */
 class Produto
 {
     /**
@@ -24,7 +28,7 @@ class Produto
      * Produto constructor.
      *
      * @param $produto
-     * @param $valor
+     * @param $valorUnitario
      * @param int $quantidade
      */
     public function __construct($produto, $valorUnitario, $quantidade = 1)

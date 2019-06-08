@@ -2,6 +2,11 @@
 
 namespace CDC\Loja\RH;
 
+/**
+ * Class TabelaCargos
+ *
+ * @package CDC\Loja\RH
+ */
 class TabelaCargos
 {
     /**

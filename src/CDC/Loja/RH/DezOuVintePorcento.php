@@ -1,8 +1,12 @@
 <?php
 
-
 namespace CDC\Loja\RH;
 
+/**
+ * Class DezOuVintePorcento
+ *
+ * @package CDC\Loja\RH
+ */
 class DezOuVintePorcento extends RegraDeCalculo
 {
 

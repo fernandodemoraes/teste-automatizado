@@ -4,6 +4,11 @@ namespace CDC\Exemplos;
 
 use \PHPUnit_Framework_TestCase as PHPUnit;
 
+/**
+ * Class ConversorDeNumeroRomanoTest
+ *
+ * @package CDC\Exemplos
+ */
 class ConversorDeNumeroRomanoTest extends PHPUnit
 {
     /**

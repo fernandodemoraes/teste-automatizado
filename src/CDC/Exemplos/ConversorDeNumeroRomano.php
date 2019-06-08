@@ -2,6 +2,11 @@
 
 namespace CDC\Exemplos;
 
+/**
+ * Class ConversorDeNumeroRomano
+ *
+ * @package CDC\Exemplos
+ */
 class ConversorDeNumeroRomano
 {
     /**

@@ -2,9 +2,14 @@
 
 namespace CDC\Loja\RH;
 
-use PHPUnit_Framework_TestCase as PHPUnit;
+use CDC\Loja\Test\TestCase;
 
-class CalculadoraDeSalarioTest extends PHPUnit
+/**
+ * Class CalculadoraDeSalarioTest
+ *
+ * @package CDC\Loja\RH
+ */
+class CalculadoraDeSalarioTest extends TestCase
 {
     /**
      * Calcular salário do desenvolvedor abaixo do limite

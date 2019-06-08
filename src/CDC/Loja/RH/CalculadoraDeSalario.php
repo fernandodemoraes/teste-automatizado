@@ -2,6 +2,11 @@
 
 namespace CDC\Loja\RH;
 
+/**
+ * Class CalculadoraDeSalario
+ *
+ * @package CDC\Loja\RH
+ */
 class CalculadoraDeSalario
 {
 

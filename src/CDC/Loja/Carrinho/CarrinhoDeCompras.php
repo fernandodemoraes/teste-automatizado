@@ -18,6 +18,9 @@ class CarrinhoDeCompras
      */
     private $produtos;
 
+    /**
+     * CarrinhoDeCompras constructor.
+     */
     public function __construct()
     {
         $this->produtos = new ArrayObject();

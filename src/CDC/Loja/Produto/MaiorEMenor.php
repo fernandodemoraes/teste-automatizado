@@ -4,6 +4,11 @@ namespace CDC\Loja\Produto;
 
 use CDC\Loja\Carrinho\CarrinhoDeCompras;
 
+/**
+ * Class MaiorEMenor
+ *
+ * @package CDC\Loja\Produto
+ */
 class MaiorEMenor
 {
     /**

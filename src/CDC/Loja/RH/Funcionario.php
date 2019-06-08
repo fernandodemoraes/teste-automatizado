@@ -2,6 +2,11 @@
 
 namespace CDC\Loja\RH;
 
+/**
+ * Class Funcionario
+ *
+ * @package CDC\Loja\RH
+ */
 class Funcionario
 {
     /**

@@ -1,9 +1,12 @@
 <?php
 
-
 namespace CDC\Loja\RH;
 
-
+/**
+ * Class RegraDeCalculo
+ *
+ * @package CDC\Loja\RH
+ */
 abstract class RegraDeCalculo
 {
 
@@ -27,15 +30,21 @@ abstract class RegraDeCalculo
     /**
      * Limite
      */
-    protected function limite() {}
+    protected function limite()
+    {
+    }
 
     /**
      * Porcentagem acima do limite
      */
-    protected function porcentagemAcimaDoLimite() {}
+    protected function porcentagemAcimaDoLimite()
+    {
+    }
 
     /**
      * Porcentagem base
      */
-    protected function porcentagemBase() {}
+    protected function porcentagemBase()
+    {
+    }
 }

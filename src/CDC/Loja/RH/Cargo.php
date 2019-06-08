@@ -1,10 +1,14 @@
 <?php
 
-
 namespace CDC\Loja\RH;
 
 use RuntimeException;
 
+/**
+ * Class Cargo
+ *
+ * @package CDC\Loja\RH
+ */
 class Cargo
 {
 

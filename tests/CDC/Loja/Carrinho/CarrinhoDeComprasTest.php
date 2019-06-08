@@ -5,6 +5,11 @@ namespace CDC\Loja\Carrinho;
 use CDC\Loja\Test\Builder\CarrinhoDeComprasBuilder;
 use CDC\Loja\Test\TestCase;
 
+/**
+ * Class CarrinhoDeComprasTest
+ *
+ * @package CDC\Loja\Carrinho
+ */
 class CarrinhoDeComprasTest extends TestCase
 {
 
